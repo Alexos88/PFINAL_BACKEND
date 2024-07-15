@@ -29,6 +29,7 @@ const hasPermissions = async (req, res, next) => {
     next();
 }
 
+
 export default {
     isValidUserById,
     hasPermissions
