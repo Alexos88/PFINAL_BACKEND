@@ -1,11 +1,17 @@
-# API for Authentication
+Para crear un token se pueden utilizar las siguientes credenciales:
+{
+"email": "alexos.88@gmail.com",
+"password":"aom"
+}
 
-- This is a readme with all routes
+Para el findUsers se deben utilizar los siguientes parametros:
+name
+deleted
+loggedInBefore (Para consultar fechas anteriores)
+loggedInAfter (Para consultar fechas posteriores)
 
-## Auth Routes
-
-### POST ```/api/v1/auth/login```
-
-- method must include a user and password
-- method return a BASE64 token with this information:
-- ```{ "name": ..., "email": ..., "roles": ..., "expiration":... }```
+Para bulkCreate se deben ingresar los siguientes parametros:
+name
+email
+password
+cellphone
